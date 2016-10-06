@@ -101,7 +101,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy', [
-    // add your deploy tasks here
+    'start',
+    'build'
 
   ]);
   grunt.registerTask('start', [
