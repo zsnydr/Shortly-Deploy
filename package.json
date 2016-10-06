@@ -9,7 +9,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "start": "npm run add && npm run push && grunt deploy",
+    "start": "grunt deploy",
     "test": "grunt test",
     "lint": "eslint ./",
     "add": "git commit -am 'Commit'",
