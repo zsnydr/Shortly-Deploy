@@ -69,7 +69,7 @@ module.exports = function(grunt) {
   });
 
   ////////////////////////////////////////////////////
-  // Main grunt tasks
+  // Main grunt tasks f
   ////////////////////////////////////////////////////
 
   grunt.registerTask('test', [
@@ -90,6 +90,8 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy', [
     // add your deploy tasks here
   ]);
-
+  grunt.registerTask('start', [
+    'nodemon'
+  ]);
 
 };
