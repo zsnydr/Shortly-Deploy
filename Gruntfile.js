@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options: {separator: ';'},
       dist: {
         src: ['public/client/**/*.js'],
-        dest: 'public/dist/<%= pkg.name %>.js'
+        dest: 'public/dist/<%= pkg.name %>.min.js'
       }
     },
 
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 
     uglify: {
       target: {
-        files: {'public/dist/<%= pkg.name %>.min.js': ['client/**/*.js']
+        files: {'public/dist/<%= pkg.name %>.min.js': ['public/client/**/*.js']
       }}
     },
 
