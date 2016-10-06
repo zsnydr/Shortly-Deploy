@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 
     eslint: {
       target: [
-        files: {'public/dist/<%= pkg.name %>.min.js'}
+        files: ['public/dist/<%= pkg.name %>.min.js']
       ]
     },
 
