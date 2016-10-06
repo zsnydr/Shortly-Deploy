@@ -101,8 +101,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy', [
-    'start',
-    'build'
+    'build',
+    'start'
 
   ]);
   grunt.registerTask('start', [

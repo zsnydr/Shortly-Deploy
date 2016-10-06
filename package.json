@@ -9,11 +9,11 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "start": "grunt build && grunt upload",
+    "start": "npm run add && npm run push && grunt deploy",
     "test": "grunt test",
     "lint": "eslint ./",
-    "add": "git commit -am 'Test'"
-
+    "add": "git commit -am 'Commit'",
+    "push": "git push live master"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -43,6 +43,7 @@
     "sqlite3": "~3.1.1"
   },
   "devDependencies": {
+    "grunt-git": "^1.0.0",
     "supertest": "^1.2.0"
   }
 }
