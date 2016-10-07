@@ -60,6 +60,9 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+      },
+      mongo: {
+        command: 'mongod'
       }
     },
   });
@@ -88,8 +91,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'concat',
     'uglify',
-    'eslint',
-    'mochaTest'
+    'eslint'
+
   ]);
 
   grunt.registerTask('upload', function(n) {

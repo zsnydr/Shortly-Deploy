@@ -1,3 +1,22 @@
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/shortlydb');
+
+var db = mongoose.connection;
+
+db.on('error', () => { console.log('ERROR'); });
+db.once('open', () => { console.log('OPEN'); });
+
+module.exports.db = db;
+
+
+
+
+
+
+
+
+/*
 var path = require('path');
 var knex = require('knex')({
   client: 'sqlite3',
@@ -37,4 +56,4 @@ db.knex.schema.hasTable('users').then(function(exists) {
   }
 });
 
-module.exports = db;
+*/
